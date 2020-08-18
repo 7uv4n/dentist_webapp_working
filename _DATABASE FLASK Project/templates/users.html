@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--{{ url_for('static', filename='css/main.css') }}-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-92610751-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92610751-3');
+    </script>
+</head>
+
+<table border=1 class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">p_id</th>
+            <th scope="col">pname</th>
+            <th scope="col">birthdate</th>
+            <th scope="col">age</th>
+            <th scope="col">gender</th>
+            <th scope="col">occupation</th>
+            <th scope="col">mobile</th>
+            <th scope="col">raddress</th>
+            <th scope="col">e_name</th>
+            <th scope="col">e_mobile</th>
+            <th scope="col">relation</th>
+            <th scope="col">care</th>
+            <th scope="col">drugs</th>
+            <th scope="col">surgery</th>
+            <th scope="col">chest</th>
+            <th scope="col">bleed</th>
+            <th scope="col">bldis</th>
+            <th scope="col">odrugs</th>
+            <th scope="col">smoke</th>
+            <th scope="col">ocondn</th>
+            <th scope="col">pregnant</th>
+            <th scope="col">period</th>
+            <th scope="col">pills</th>
+        </tr>
+      </thead>
+      <tbody>
+
+    {% for user in userDetails %}
+    <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+        <td>{{user[2]}}</td>
+        <td>{{user[3]}}</td>
+        <td>{{user[4]}}</td>
+        <td>{{user[5]}}</td>
+        <td>{{user[6]}}</td>
+        <td>{{user[7]}}</td>
+        <td>{{user[8]}}</td>
+        <td>{{user[9]}}</td>
+        <td>{{user[10]}}</td>
+        <td>{{user[11]}}</td>
+        <td>{{user[12]}}</td>
+        <td>{{user[13]}}</td>
+        <td>{{user[14]}}</td>
+        <td>{{user[15]}}</td>
+        <td>{{user[16]}}</td>
+        <td>{{user[17]}}</td>
+        <td>{{user[18]}}</td>
+        <td>{{user[19]}}</td>
+        <td>{{user[20]}}</td>
+        <td>{{user[21]}}</td>
+        <td>{{user[22]}}</td>
+    </tr>
+    {% endfor %}
+    
+  </tbody>
+</table>
+<form method="POST" action="">
+    <input name="signin" type="submit" class="btn btn-primary" style="margin:" value="Click to go to Login Page"><br>
+</form>
+
+</html>

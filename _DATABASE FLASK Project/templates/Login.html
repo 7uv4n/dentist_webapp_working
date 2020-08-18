@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main1.css') }}">
+</head>
+
+<body>
+    <div class="register-photo">
+        <div class="form-container">
+            <div class="image-holder"></div>
+            <form class="form-horizontal" method="POST" action="">
+                <div class="preview">
+                    <h2 class="text-center"> Welcome to </h2>
+                    <h2 class="text-center">Dr.VK's Dental Clinic</h2>
+    
+                    <div class="form-group"><label class="control-label">Doctor Login</label><input type="text" name="login"
+                            placeholder="Username" class="form-control" /></div>
+                    <div class="form-group"><label class="control-label">Password</label><input type="password"
+                            name="password" placeholder="Password" class="form-control" /></div><button name="signin"
+                        type="submit" class="btn btn-primary" style="margin:">Sign in to get all patients details</button><br>
+                        <input name="register" type="submit" class="btn btn-primary" style="margin" value="Click here to register (For patients)">
+                </div>
+                <div style="display: none;" class="form-group plain_html"><textarea rows="50"
+                        class="form-control"></textarea></div>
+            </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

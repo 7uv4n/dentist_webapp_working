@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-92610751-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92610751-3');
+    </script>
+</head>
+
+<div class="col-md-5">
+    <div class="col-md-12">
+        <form class="form-horizontal">
+            <div class="preview" style="">
+                <div class="form-group">
+                    <label class="control-label">Name</label>
+                    <input type="text" name="name" placeholder="Type in your Full name" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Date of Birth</label>
+                    <input type="date" name="date" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Age</label>
+                    <input type="number" name="age" placeholder="Age" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Gender</label>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="Gender" value="M">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="Gender" value="F">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Occupation</label>
+                    <input type="text" name="occupation" placeholder="Occupation" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Marital Status</label>
+                    <input type="text" name="marital" placeholder="Marital Status" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Referred by</label>
+                    <input type="text" name="referrer" placeholder="Referred by" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">In Case of Emergency whom to contact:</label>
+                    <input type="text" name="emername" placeholder="Person Name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Mobile Number of your contact</label>
+                    <input type="text" name="emermobile" placeholder="Mobile Number" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Relationship with your emergency contact</label>
+                    <input type="text" name="emerrel" placeholder="Relationship" class="form-control" />
+                </div><button name="next" type="submit" class="btn btn-primary btn-block">Next</button>
+                <div style="display: none;" class="form-group plain_html"><textarea rows="50"
+                        class="form-control"></textarea></div>
+        </form>
+    </div>
+</div>
+
+</html>
